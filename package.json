@@ -9,7 +9,10 @@
   "scripts": {
     "test": "mocha",
     "dev": "docker-compose up --build",
-    "start": "node server.js"
+    "start": "node server.js",
+    "migrate_down": "db-migrate down -c 1 --config ./config/test_config.json",
+    "migrate_up": "db-migrate up -c 1 --config ./config/test_config.json",
+    "migrate_up_all": "db-migrate up --config ./config/test_config.json"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,8 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "db-migrate": "^0.11.11",
+    "db-migrate-pg": "^1.2.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
