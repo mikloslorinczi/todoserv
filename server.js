@@ -105,4 +105,3 @@ app.delete("/v1/items/:id", async (req, res) => {
 
 // Server
 app.listen(config.port, () => console.log(`TODO server listening on port ${config.port}`));
-
