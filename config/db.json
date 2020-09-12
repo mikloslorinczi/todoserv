@@ -1,8 +1,8 @@
 {
-    "defaultEnv": "test",
-    "test": {
+    "defaultEnv": "dev",
+    "dev": {
         "driver": "pg",
-        "host": "172.17.0.4",
+        "host": {"ENV": "PGHOST"},
         "schema": "public",
         "database": "postgres",
         "user": "postgres"
