@@ -1,0 +1,10 @@
+{
+    "defaultEnv": "test",
+    "test": {
+        "driver": "pg",
+        "host": "database",
+        "schema": "public",
+        "database": "postgres",
+        "user": "postgres"
+    }
+}
