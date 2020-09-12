@@ -2,7 +2,7 @@
     "defaultEnv": "test",
     "test": {
         "driver": "pg",
-        "host": "database",
+        "host": "172.17.0.4",
         "schema": "public",
         "database": "postgres",
         "user": "postgres"
