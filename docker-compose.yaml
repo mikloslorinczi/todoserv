@@ -19,6 +19,7 @@ services:
     restart: on-failure
     container_name: todoa-app
     environment:
+      - DEMON=on
       - PGUSER=postgres
       - PGHOST=database
       - PGDATABASE=postgres
