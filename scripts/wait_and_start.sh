@@ -12,5 +12,5 @@ function run_demon {
 # If demon is on run server with nodemon, otherwise jusr tun it with node
 case $DEMON in
     on|On|ON) run_demon;;
-    *)        npm run;;
+    *)        npm start;;
 esac
