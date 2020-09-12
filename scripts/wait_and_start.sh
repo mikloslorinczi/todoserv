@@ -6,7 +6,6 @@ case $DEMON in
     on|On|ON)
         # Install Nodemon
         npm install -g nodemon db-migrate
-        # Migrate the database up
         npm run migrate_up_all
         # Spinn up the server with nodemon
         nodemon server.js

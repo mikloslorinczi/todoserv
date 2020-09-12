@@ -10,9 +10,9 @@
     "test": "mocha",
     "dev": "docker-compose up --build",
     "start": "node server.js",
-    "migrate_down": "db-migrate down -c 1 --config ./config/test_config.json",
-    "migrate_up": "db-migrate up -c 1 --config ./config/test_config.json",
-    "migrate_up_all": "db-migrate up --config ./config/test_config.json"
+    "migrate_down": "db-migrate down -c 1 --config ./config/db.json",
+    "migrate_up": "db-migrate up -c 1 --config ./config/db.json",
+    "migrate_up_all": "db-migrate up --config ./config/db.json"
   },
   "repository": {
     "type": "git",
